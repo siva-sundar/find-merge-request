@@ -15,10 +15,10 @@ const findMergeRequest = require('find-merge-request');
 async function mergeRequestDetails() {
   let mergeRequest = await findMergeRequest({   /* this will return the details of the merge request if found
   else it will return an empty object. */
-    apiURL: 'https://git.csez.zohocorpin.com/api/v4',
+    apiURL: 'https://gitlab.com/api/v4',
     gitlabToken: '*********',
     projectId: '123',
     branchName: "feature_contact_details"
-  }); 
+  });
 }
 ```
